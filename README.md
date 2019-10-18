@@ -1,6 +1,9 @@
 ## GroupDocs.Merger Cloud SDK for .NET Examples
 This repository contains [Examples](Examples) projects for [GroupDocs.Merger Cloud SDK for .NET](https://github.com/groupdocs-merger-cloud/groupdocs-merger-cloud-dotnet) to help you learn and write your own applications.
 
+
+[GroupDocs.Merger Cloud](https://products.groupdocs.cloud/merger) allows you to merge documents and manipulate document structure across wide range of supported document types - PDF, DOCX/DOC, PPTX/PPT, XLSX/XLS, VSDX/VSD, ODT, ODS, ODP, HTML, EPUB and many others. Merge several documents into one, split single document to multiple documents, reorder or replace document pages, change page orientation, manage document password and perform other manipulations with GroupDocs.Merger Cloud API. GroupDocs.Merger Cloud SDK for Java has been developed to help you integrate all these features in your Java application without any hassle.
+
 <p align="center">
   <a title="Download complete GroupDocs.Merger Cloud SDK .NET Example source code" href="https://github.com/groupdocs-merger-cloud/groupdocs-merger-cloud-dotnet-samples/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
