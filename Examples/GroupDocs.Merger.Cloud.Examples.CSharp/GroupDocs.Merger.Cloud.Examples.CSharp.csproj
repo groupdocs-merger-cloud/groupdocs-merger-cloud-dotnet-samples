@@ -55,8 +55,8 @@
     <StartupObject>GroupDocs.Merger.Cloud.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GroupDocs.Merger.Cloud.Sdk, Version=19.9.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\GroupDocs.Merger-Cloud.19.9.0-alpha-20191011010522\lib\net20\GroupDocs.Merger.Cloud.Sdk.dll</HintPath>
+    <Reference Include="GroupDocs.Merger.Cloud.Sdk, Version=19.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GroupDocs.Merger-Cloud.19.10.0\lib\net20\GroupDocs.Merger.Cloud.Sdk.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

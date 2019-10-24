@@ -13,7 +13,7 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
             //TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
             Common.MyAppSid = "XXXXX-XXXXX-XXXXX";
             Common.MyAppKey = "XXXXXXXXXX";
-            Common.MyStorage = "XXXXX";
+            Common.MyStorage = "First Storage";
 
             // Uploading sample test files from local disk to cloud storage
             Common.UploadSampleTestFiles();
