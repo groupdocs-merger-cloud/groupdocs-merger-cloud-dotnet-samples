@@ -8,13 +8,19 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
 {
     internal class Common
 	{
-		public static string MyAppSid;
-		public static string MyAppKey;
+		public static string MyClientId;
+		public static string MyClientSecret;
 		public static string MyStorage;
+
+        public static Configuration GetConfig()
+        {
+            var config = new Configuration(MyClientId,  MyClientSecret);
+            return config;
+        }
 
 		public static void UploadSampleTestFiles()
 		{
-			var storageConfig = new Configuration(MyAppSid, MyAppKey);
+			var storageConfig = GetConfig();
             var storageApi = new StorageApi(storageConfig);
 			var folderApi = new FolderApi(storageConfig);
 			var fileApi = new FileApi(storageConfig);

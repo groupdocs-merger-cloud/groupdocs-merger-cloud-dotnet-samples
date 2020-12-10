@@ -13,7 +13,7 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
     {
 		public static void Run()
 		{
-            var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
+            var configuration = Common.GetConfig();
             var apiInstance = new SecurityApi(configuration);
 
 			try

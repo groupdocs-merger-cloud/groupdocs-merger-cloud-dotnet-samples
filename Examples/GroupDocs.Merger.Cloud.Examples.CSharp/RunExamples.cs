@@ -10,9 +10,9 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
             ////          GroupDocs.Merger Cloud API Examples
             //// ***********************************************************
 
-            //TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
-            Common.MyAppSid = "XXXXX-XXXXX-XXXXX";
-            Common.MyAppKey = "XXXXXXXXXX";
+            //TODO: Get your ClientId and ClientSecret at https://dashboard.groupdocs.cloud (free registration is required).
+            Common.MyClientId = "XXXXX-XXXXX-XXXXX";
+            Common.MyClientSecret = "XXXXXXXXXX";
             Common.MyStorage = "First Storage";
 
             // Uploading sample test files from local disk to cloud storage

@@ -15,7 +15,7 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
     {
 		public static void Run()
 		{
-            var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
+            var configuration = Common.GetConfig();
             var apiInstance = new DocumentApi(configuration);
 
 			try
@@ -29,7 +29,7 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
                 {
                     FileInfo = fileInfo,
                     OutputPath = "Output/split-document",
-                    Pages = new List<int?> { 1, 3 },
+                    Pages = new List<int?> { 3, 6, 8 },
                     Mode = SplitOptions.ModeEnum.Pages
                 };
 
