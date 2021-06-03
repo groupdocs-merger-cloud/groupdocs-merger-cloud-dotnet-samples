@@ -1,17 +1,16 @@
-using GroupDocs.Merger.Cloud.Sdk.Api;
-using GroupDocs.Merger.Cloud.Sdk.Client;
-using GroupDocs.Merger.Cloud.Sdk.Model;
-using GroupDocs.Merger.Cloud.Sdk.Model.Requests;
 using System;
 using System.Collections.Generic;
+using GroupDocs.Merger.Cloud.Sdk.Api;
+using GroupDocs.Merger.Cloud.Sdk.Model;
+using GroupDocs.Merger.Cloud.Sdk.Model.Requests;
 using FileInfo = GroupDocs.Merger.Cloud.Sdk.Model.FileInfo;
 
-namespace GroupDocs.Merger.Cloud.Examples.CSharp
+namespace GroupDocs.Merger.Cloud.Examples.CSharp.DocumentOperations.JoinDocuments
 {
     /// <summary>
-    /// This example demonstrates how to join multiple documents into one document.
+    /// This example demonstrates how to join multiple documents of various formats into one document
     /// </summary>
-    public class JoinMultipleDocuments
+    public class JoinDocumentsCrossFormat
     {
 		public static void Run()
 		{
@@ -24,7 +23,8 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
                 {
                     FileInfo = new FileInfo
                     {
-                        FilePath = "WordProcessing/four-pages.docx"
+                        FilePath = "Pdf/one-page-password.pdf",
+                        Password = "password"
                     }
                 };
 
@@ -39,7 +39,7 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
                 var options = new JoinOptions
                 {
                     JoinItems = new List<JoinItem> { item1, item2 },
-                    OutputPath = "Output/joined.docx"
+                    OutputPath = "Output/joined.pdf"
                 };
 
                 var request = new JoinRequest(options);

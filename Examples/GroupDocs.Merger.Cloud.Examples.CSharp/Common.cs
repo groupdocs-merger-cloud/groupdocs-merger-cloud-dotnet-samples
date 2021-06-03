@@ -15,6 +15,7 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
         public static Configuration GetConfig()
         {
             var config = new Configuration(MyClientId,  MyClientSecret);
+            config.ApiBaseUrl = "https://api.groupdocs.cloud";
             return config;
         }
 
@@ -25,7 +26,7 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
 			var folderApi = new FolderApi(storageConfig);
 			var fileApi = new FileApi(storageConfig);
 
-			var path = "..\\..\\..\\Resources";
+			var path = "..\\..\\..\\..\\..\\Resources";
 
 			Console.WriteLine("File Upload Processing...");
 

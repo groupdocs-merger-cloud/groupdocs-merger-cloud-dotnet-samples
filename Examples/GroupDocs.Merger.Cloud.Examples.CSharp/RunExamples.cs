@@ -1,4 +1,6 @@
 ﻿using System;
+using GroupDocs.Merger.Cloud.Examples.CSharp.DocumentOperations;
+using GroupDocs.Merger.Cloud.Examples.CSharp.DocumentOperations.JoinDocuments;
 
 namespace GroupDocs.Merger.Cloud.Examples.CSharp
 {
@@ -11,8 +13,8 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
             //// ***********************************************************
 
             //TODO: Get your ClientId and ClientSecret at https://dashboard.groupdocs.cloud (free registration is required).
-            Common.MyClientId = "XXXXX-XXXXX-XXXXX";
-            Common.MyClientSecret = "XXXXXXXXXX";
+            Common.MyClientId = "XXXX-XXXX-XXXX-XXXX";
+            Common.MyClientSecret = "XXXXXXXXXXXXXXXX";
             Common.MyStorage = "First Storage";
 
             // Uploading sample test files from local disk to cloud storage
@@ -30,11 +32,13 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
             #region Document operations
             JoinMultipleDocuments.Run();
             JoinPagesFromVariousDocuments.Run();
+            JoinDocumentsCrossFormat.Run();
             PreviewDocument.Run();
             SplitToSinglePages.Run();
             SplitToSinglePagesByRange.Run();
             SplitToSinglePagesByRangeWithFilter.Run();
             SplitToMultiPageDocuments.Run();
+            ImportAttachment.Run();
             #endregion
 
             #region Pages operations
