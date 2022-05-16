@@ -21,8 +21,7 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
 				var fileInfo = new FileInfo
                 {
 						FilePath = "WordProcessing/password-protected.docx",
-						Password = "password",
-						StorageName = Common.MyStorage
+						Password = "password"
 					};
 
 				var request = new GetInfoRequest(fileInfo);

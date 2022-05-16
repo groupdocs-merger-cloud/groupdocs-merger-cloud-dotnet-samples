@@ -8,13 +8,12 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
 {
     internal class Common
 	{
-		public static string MyClientId;
-		public static string MyClientSecret;
-		public static string MyStorage;
+		public static string ClientId;
+		public static string ClientSecret;
 
         public static Configuration GetConfig()
         {
-            var config = new Configuration(MyClientId,  MyClientSecret);
+            var config = new Configuration(ClientId,  ClientSecret);
             config.ApiBaseUrl = "https://api.groupdocs.cloud";
             return config;
         }
@@ -34,10 +33,10 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
 			foreach (var dir in dirs)
 			{
 				var relativeDirPath = dir.Replace(path, string.Empty).Trim(Path.DirectorySeparatorChar);
-				var response = storageApi.ObjectExists(new Sdk.Model.Requests.ObjectExistsRequest(relativeDirPath, MyStorage));
+				var response = storageApi.ObjectExists(new Sdk.Model.Requests.ObjectExistsRequest(relativeDirPath));
 				if (response.Exists != null && !response.Exists.Value)
 				{
-					folderApi.CreateFolder(new Sdk.Model.Requests.CreateFolderRequest(relativeDirPath, MyStorage));
+					folderApi.CreateFolder(new Sdk.Model.Requests.CreateFolderRequest(relativeDirPath));
 				}
 			}
 
@@ -46,12 +45,12 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
 			{
 				var relativeFilePath = file.Replace(path, string.Empty).Trim(Path.DirectorySeparatorChar);
 
-				var response = storageApi.ObjectExists(new Sdk.Model.Requests.ObjectExistsRequest(relativeFilePath, MyStorage));
+				var response = storageApi.ObjectExists(new Sdk.Model.Requests.ObjectExistsRequest(relativeFilePath));
 				if (response.Exists != null && !response.Exists.Value)
 				{
                     var fileStream = File.Open(file, FileMode.Open);
 
-					fileApi.UploadFile(new Sdk.Model.Requests.UploadFileRequest(relativeFilePath, fileStream, MyStorage));
+					fileApi.UploadFile(new Sdk.Model.Requests.UploadFileRequest(relativeFilePath, fileStream));
 					fileStream.Close();
 				}
 			}

@@ -13,13 +13,12 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
             //// ***********************************************************
 
             //TODO: Get your ClientId and ClientSecret at https://dashboard.groupdocs.cloud (free registration is required).
-            Common.MyClientId = "XXXX-XXXX-XXXX-XXXX";
-            Common.MyClientSecret = "XXXXXXXXXXXXXXXX";
-            Common.MyStorage = "First Storage";
+            Common.ClientId = "XXXX-XXXX-XXXX-XXXX";
+            Common.ClientSecret = "XXXXXXXXXXXXXXXX";
 
             // Uploading sample test files from local disk to cloud storage
             Common.UploadSampleTestFiles();
-           
+
 
             #region Get all supported file types
             GetSupportedFileTypes.Run();
@@ -33,6 +32,7 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
             JoinMultipleDocuments.Run();
             JoinPagesFromVariousDocuments.Run();
             JoinDocumentsCrossFormat.Run();
+            JoinWordDocumentsContinous.Run();
             PreviewDocument.Run();
             SplitToSinglePages.Run();
             SplitToSinglePagesByRange.Run();
@@ -56,6 +56,10 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
             CheckDocumentPasswordProtection.Run();
             RemoveDocumentPassword.Run();
             UpdateDocumentPassword.Run();
+            #endregion
+
+            #region License consumption
+            GetLicenseConsumption.Run();
             #endregion
 
             Console.WriteLine("Completed!");
