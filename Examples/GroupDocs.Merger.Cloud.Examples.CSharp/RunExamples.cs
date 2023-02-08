@@ -33,6 +33,7 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
             JoinPagesFromVariousDocuments.Run();
             JoinDocumentsCrossFormat.Run();
             JoinWordDocumentsContinous.Run();
+            JoinImages.Run();
             PreviewDocument.Run();
             SplitToSinglePages.Run();
             SplitToSinglePagesByRange.Run();
@@ -58,9 +59,9 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
             UpdateDocumentPassword.Run();
             #endregion
 
-            #region License consumption
-            GetLicenseConsumption.Run();
-            #endregion
+            //#region License consumption (Works only with Docker version)
+            //GetLicenseConsumption.Run();
+            //#endregion
 
             Console.WriteLine("Completed!");
             Console.ReadKey();
