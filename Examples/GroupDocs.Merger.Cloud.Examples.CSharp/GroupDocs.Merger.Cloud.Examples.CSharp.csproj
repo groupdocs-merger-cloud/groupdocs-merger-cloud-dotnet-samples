@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GroupDocs.Merger-Cloud" Version="23.2.0" />
+    <PackageReference Include="GroupDocs.Merger-Cloud" Version="23.10.0" />
   </ItemGroup>
 
 </Project>
