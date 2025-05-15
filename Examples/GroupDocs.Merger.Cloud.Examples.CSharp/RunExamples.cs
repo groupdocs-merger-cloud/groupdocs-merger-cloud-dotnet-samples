@@ -34,6 +34,7 @@ namespace GroupDocs.Merger.Cloud.Examples.CSharp
             JoinDocumentsCrossFormat.Run();
             JoinWordDocumentsContinous.Run();
             JoinImages.Run();
+            MixPages.Run();
             PreviewDocument.Run();
             SplitToSinglePages.Run();
             SplitToSinglePagesByRange.Run();
